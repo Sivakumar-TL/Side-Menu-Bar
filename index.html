@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side-bar-Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div id="side-open" class="side-menu">
+        <button onclick="closeNav()">Close</button>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Career</li>
+        </ul>
+    </div>
+    <header>
+        <nav class="main-menu">
+            <a href="#">Landing</a>
+            <a href="#">Service</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Career</a>
+            <button onclick="openNav()" class="open-btn">Open</button>
+        </nav>
+    </header>
+    <main>
+        <section id="landing">
+            <h1>Landing</h1>
+        </section>
+        <section id="service">
+            <h1>Service</h1>
+        </section>
+        <section id="about">
+            <h1>About</h1>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+        </section>
+        <section id="career">
+            <h1>Career</h1>
+        </section>
+    </main>
+    <script>
+        function openNav(){
+            document.getElementById("side-open").style.display = "block"
+        }
+        function closeNav(){
+            document.getElementById("side-open").style.display = "none"
+        }
+
+    </script>
+</body>
+</html>

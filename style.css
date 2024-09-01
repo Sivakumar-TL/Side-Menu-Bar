@@ -1,0 +1,55 @@
+header{
+    position: sticky;
+    top: 0;
+}
+.main-menu{
+    background-color: rgb(28, 27, 27);
+    padding: 2rem;
+}
+.main-menu a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.main-menu a:hover{
+    color: yellow;
+}
+section{
+    height: 400px;
+}
+section:nth-child(odd){
+    background-color: rgb(197, 189, 189);
+}
+.side-menu{
+    display: none;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: yellow;
+    width: 35vw;
+}
+.side-menu ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 1.6rem;
+}
+.side-menu ul li{
+    list-style-type: none;
+    background-color: aqua;
+    padding: 10px;
+    border-bottom: solid 1px;
+}
+.side-menu button{
+    border: none;
+    background-color:black;
+    color: yellow;
+    position: absolute;
+    right: 0;
+}
+.open-btn{
+    float: right;
+}
